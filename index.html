@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Web Quiz</h1>
+
+    <div id="welcome-screen">
+      <p>Test your knowledge of HTML, CSS, and JavaScript!</p>
+      <button id="start-btn">Start Quiz</button>
+      <button id="install-btn" class="hidden">Install App</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div id="question-number">Question 1 of 10</div>
+      <div id="timer">Time Left: 20s</div>
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="next-btn" class="hidden">Next</button>
+    </div>
+
+    <div id="final-screen" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="score"></p>
+      <button id="retake-btn">Retake Quiz</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
